@@ -35,3 +35,10 @@ footer{border-top:1px solid #eceae5}
 footer .brand{width:max-content}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 @media(max-width:760px){.top{position:relative}.brand{font-size:20px}nav{row-gap:4px}main.section>p,main.section>ul,main.section>ol{font-size:14px}.video-tutorial{padding:18px}.section-head h2{line-height:1.05}}
+
+.content-search{max-width:620px;margin:0 0 28px;padding:20px;background:#fff;border:1px solid #e8e5df;border-radius:5px}
+.content-search label{display:block;font-size:10px;font-weight:900;letter-spacing:1.5px;margin-bottom:10px;color:#555}
+.content-search input{display:block;width:100%;padding:14px 15px;border:1px solid #d5d2cc;border-radius:3px;background:#faf9f6;color:var(--black);font:14px 'DM Sans',Arial,sans-serif}
+.content-search input:focus{outline:2px solid var(--red);outline-offset:2px;border-color:var(--red)}
+.content-search p{margin:10px 0 0;font-size:11px;color:#777}
+.feature[hidden]{display:none!important}
