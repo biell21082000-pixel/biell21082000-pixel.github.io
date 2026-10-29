@@ -87,7 +87,7 @@
 </main>
 <footer class="library-footer"><p>GUIA DO PILOTO • Informação para cuidar melhor da sua moto.</p><a href="index.html">Voltar à página inicial</a> · <a href="politica-de-privacidade.html">Privacidade</a> · <a href="contato.html">Contato</a></footer>
 <script>
-const search=document.getElementById('modelSearch'),cards=[...document.querySelectorAll('#modelGrid .library-card')],status=document.getElementById('modelStatus');
+const search=document.getElementById('modelSearch'),cards=[...document.querySelectorAll('.library-card')],status=document.getElementById('modelStatus');
 search.addEventListener('input',()=>{const q=search.value.trim().toLocaleLowerCase('pt-BR');let count=0;cards.forEach(card=>{const show=card.dataset.search.toLocaleLowerCase('pt-BR').includes(q)||card.innerText.toLocaleLowerCase('pt-BR').includes(q);card.hidden=!show;if(show)count++});status.textContent=q?count+' grupo(s) de modelos encontrado(s).':'Modelos listados abaixo.'});
 </script>
 </body></html>
