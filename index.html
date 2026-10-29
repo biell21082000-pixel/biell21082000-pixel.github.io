@@ -1,39 +1,92 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="google-adsense-account" content="ca-pub-1104618037132942">
-<meta name="google-site-verification" content="GYQrJUnRmGa05as4Y6DH4URm7GUkE8t3sGSEgOvG414" />
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Guia do Piloto: dicas de motocicletas, manutenção, equipamentos, segurança e vida sobre duas rodas.">
-<meta name="theme-color" content="#e5232e"><meta name="robots" content="index,follow"><meta property="og:type" content="website"><meta property="og:title" content="Guia do Piloto | Sua vida sobre duas rodas"><meta property="og:description" content="Guias práticos sobre motocicletas, pilotagem segura, manutenção e equipamentos."><meta property="og:url" content="https://biell21082000-pixel.github.io/"><title>Guia do Piloto | Sua vida sobre duas rodas</title><link rel="stylesheet" href="styles.css">
+<meta name="google-site-verification" content="GYQrJUnRmGa05as4Y6DH4URm7GUkE8t3sGSEgOvG414">
+<meta name="description" content="Guia do Piloto: guias práticos de motocicletas, pilotagem segura, manutenção, equipamentos e vida sobre duas rodas.">
+<meta name="theme-color" content="#e5232e">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guia do Piloto | Sua vida sobre duas rodas">
+<meta property="og:description" content="Dicas práticas para cuidar da moto, pilotar com segurança e explorar o universo das duas rodas.">
+<meta property="og:url" content="https://biell21082000-pixel.github.io/">
+<title>Guia do Piloto — Sua vida sobre duas rodas</title>
+<link rel="canonical" href="https://biell21082000-pixel.github.io/">
+<link rel="stylesheet" href="styles.css">
+<style>
+:root{--gp-red:#e5232e;--gp-ink:#111214;--gp-paper:#f4f2ed;--gp-muted:#737373}
+body{background:var(--gp-paper)}
+.top{padding-inline:max(5%,calc((100% - 1240px)/2))}
+.hero{max-width:none;min-height:590px;grid-template-columns:1.05fr .95fr;align-items:center;padding:70px max(5%,calc((100% - 1240px)/2));gap:35px;position:relative}
+.hero:after{content:"";position:absolute;inset:0 0 0 auto;width:45%;background:linear-gradient(135deg,#ffffff04,#e5232e0d);pointer-events:none}
+.hero-copy{max-width:620px}.hero h1{font-size:clamp(52px,6.5vw,92px);letter-spacing:-1px}.hero-copy p{font-size:16px;max-width:470px}
+.hero-art{border:1px solid #ffffff0d;border-radius:8px;min-height:390px;box-shadow:0 28px 70px #0003}
+.hero-art:before{content:"EST. 2026  /  GUIA PARA QUEM PILOTA";position:absolute;top:18px;left:20px;font-size:9px;letter-spacing:2px;color:#bdbdbd;z-index:2}
+.art-label{background:var(--gp-red);padding:10px 13px}
+.ticker{justify-content:center;gap:clamp(20px,5vw,76px)}
+.section{max-width:1400px;margin-inline:auto}
+.section-head{align-items:end}
+.section-head h2{letter-spacing:-.4px}
+.feature{border-radius:5px;min-height:300px;padding:28px;box-shadow:0 5px 18px #11121406}
+.feature h3{font-size:clamp(26px,2.3vw,33px)}
+.feature p{font-size:13px;line-height:1.8}
+.card-icon{display:flex;align-items:center;gap:8px}
+.content-search{max-width:760px;box-shadow:0 10px 30px #11121408}
+.content-search input{min-height:50px}
+#artigos-novos .cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+#artigos-novos .feature{min-height:275px}
+#videotutoriais .feature{min-height:230px}
+#videotutoriais .feature h3{margin-top:42px}
+#videotutoriais .feature:before{content:"▶";display:grid;place-items:center;width:38px;height:38px;border:1px solid currentColor;border-radius:50%;font-size:13px;position:absolute;right:25px;top:24px;opacity:.75}
+.ad-area{max-width:1120px;margin:0 auto;background:#fff9;padding:35px 20px;border-radius:5px}
+.guides{max-width:1240px}
+.guide-list{background:#fff;padding:0 24px;border-radius:5px}
+.closing{position:relative;overflow:hidden}
+.closing:before,.closing:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #ffffff12;border-radius:50%;pointer-events:none}
+.closing:before{left:-100px;top:-100px}.closing:after{right:-100px;bottom:-100px}
+footer{padding-inline:max(5%,calc((100% - 1240px)/2))}
+@media(max-width:760px){.hero{grid-template-columns:1fr;min-height:auto;padding:48px 6% 0;gap:15px}.hero h1{font-size:clamp(46px,12vw,68px)}.hero-art{min-height:270px}.ticker{gap:15px 24px}.section-head{display:block}#artigos-novos .cards{grid-template-columns:1fr}#artigos-novos .feature{min-height:240px}.guide-list{padding:0 14px}.ad-area{margin:0 6%}}
+@media(min-width:761px) and (max-width:1050px){.hero{padding-inline:5%}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}#artigos-novos .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
 </head>
 <body>
-<header class="top"><a class="brand" href="index.html"><span class="mark">GP</span><span>GUIA DO <b>PILOTO</b><small>SUA VIDA SOBRE DUAS RODAS</small></span></a><nav><a href="#guias">Guias</a><a href="pilotagem-segura.html">Pilotagem</a><a href="manutencao-preventiva.html">Manutenção</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a></nav></header>
-<main>
-<section class="hero"><div class="hero-copy"><span class="eyebrow">LIBERDADE • CONHECIMENTO • SEGURANÇA</span><h1>O mundo das motos começa <em>aqui.</em></h1><p>Informação prática para pilotar melhor, cuidar da sua moto e aproveitar cada quilômetro com mais confiança.</p><a class="btn" href="#guias">EXPLORE OS GUIAS <span>↗</span></a></div><div class="hero-art" aria-label="Ilustração estilizada de motocicleta"><div class="sun"></div><div class="road"></div><div class="bike"><div class="wheel w1"></div><div class="wheel w2"></div><div class="frame"></div><div class="tank"></div><div class="handle"></div></div><span class="art-label">VÁ MAIS LONGE.</span></div></section>
-<section class="ticker"><span>◆ MANUTENÇÃO</span><span>◆ EQUIPAMENTOS</span><span>◆ SEGURANÇA</span><span>◆ VIDA DE PILOTO</span></section>
-<section class="section" id="guias"><div class="section-head"><div><span class="eyebrow">CONHECIMENTO QUE MOVE</span><h2>Explore o universo <em>das motos</em></h2></div><p>Conteúdo para quem está começando e para quem já vive na estrada.</p></div>
-<div class="content-search"><label for="content-search-input">ENCONTRE SEU PRÓXIMO GUIA</label><input id="content-search-input" type="search" placeholder="Ex.: manutenção, chuva, primeira moto..." autocomplete="off"><p id="content-search-status" aria-live="polite">Pesquise por tema, dúvida ou palavra-chave.</p></div>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="top">
+<a class="brand" href="index.html" aria-label="Guia do Piloto — página inicial"><span class="mark">GP</span><span>GUIA DO <b>PILOTO</b><small>SUA VIDA SOBRE DUAS RODAS</small></span></a>
+<nav aria-label="Navegação principal"><a href="#guias">Guias</a><a href="#artigos-novos">Artigos</a><a href="#videotutoriais">Vídeos</a><a href="pilotagem-segura.html">Pilotagem</a><a href="manutencao-preventiva.html">Manutenção</a><a href="sobre.html">Sobre</a></nav>
+</header>
+<main id="conteudo">
+<section class="hero">
+<div class="hero-copy"><span class="eyebrow">LIBERDADE • CONHECIMENTO • SEGURANÇA</span><h1>Mais confiança em cada <em>quilômetro.</em></h1><p>Seu ponto de partida para entender de motos, cuidar melhor da sua máquina e tomar decisões mais seguras dentro e fora da estrada.</p><a class="btn" href="#guias">EXPLORE OS GUIAS <span aria-hidden="true">↗</span></a><div class="hero-proof"><span>✓ Guias práticos</span><span>✓ Dicas de segurança</span><span>✓ Conteúdo para pilotos</span></div></div>
+<div class="hero-art" role="img" aria-label="Ilustração gráfica de uma motocicleta esportiva em uma estrada"><div class="sun"></div><div class="road"></div><div class="bike"><div class="wheel w1"></div><div class="wheel w2"></div><div class="frame"></div><div class="tank"></div><div class="handle"></div></div><span class="art-label">VÁ MAIS LONGE.</span><span class="art-index">01 — VIDA SOBRE DUAS RODAS</span></div>
+</section>
+<section class="ticker" aria-label="Temas do site"><span>◆ MANUTENÇÃO</span><span>◆ EQUIPAMENTOS</span><span>◆ PILOTAGEM SEGURA</span><span>◆ VIDA DE PILOTO</span></section>
+<section class="section" id="guias"><div class="section-head"><div><span class="eyebrow">COMECE POR AQUI</span><h2>Conhecimento que <em>move você.</em></h2></div><p>Do primeiro passeio à rotina de quem já vive sobre duas rodas: encontre orientações úteis para a sua jornada.</p></div>
+<div class="content-search"><label for="content-search-input">O QUE VOCÊ QUER APRENDER?</label><input id="content-search-input" type="search" placeholder="Busque: corrente, chuva, moto usada..." autocomplete="off"><p id="content-search-status" aria-live="polite">Digite um assunto para encontrar um guia.</p></div>
 <div class="cards">
-<article class="feature red"><div class="card-icon">01 / PILOTAGEM</div><div class="line-art">↗</div><h3>Começando a pilotar?</h3><p>Confira os fundamentos para desenvolver hábitos seguros e ganhar confiança no trânsito.</p><a href="pilotagem-segura.html">LER GUIA COMPLETO ↗</a></article>
-<article class="feature dark" id="manutencao"><div class="card-icon">02 / MANUTENÇÃO</div><div class="line-art">⚙</div><h3>Cuide bem da sua máquina</h3><p>Aprenda o básico sobre pneus, corrente, óleo e verificações antes de sair.</p><a href="manutencao-preventiva.html">LER GUIA COMPLETO ↗</a></article>
-<article class="feature light"><div class="card-icon">03 / EQUIPAMENTOS</div><div class="line-art">◉</div><h3>Equipamento faz diferença</h3><p>Saiba o que considerar ao escolher capacete, luvas, jaqueta e outros itens.</p><a href="equipamentos-para-motociclistas.html">LER GUIA COMPLETO ↗</a></article>
+<article class="feature red"><div class="card-icon">01 / PILOTAGEM</div><div class="line-art" aria-hidden="true">↗</div><h3>Começando a pilotar?</h3><p>Conheça os fundamentos da pilotagem defensiva, a preparação antes de sair e hábitos que ajudam a reduzir riscos.</p><a href="pilotagem-segura.html">LER GUIA COMPLETO ↗</a></article>
+<article class="feature dark" id="manutencao"><div class="card-icon">02 / MANUTENÇÃO</div><div class="line-art" aria-hidden="true">⚙</div><h3>Cuide bem da sua máquina</h3><p>Aprenda sobre verificações, corrente, pneus e cuidados preventivos para manter sua moto em boas condições.</p><a href="manutencao-preventiva.html">LER GUIA COMPLETO ↗</a></article>
+<article class="feature light"><div class="card-icon">03 / EQUIPAMENTOS</div><div class="line-art" aria-hidden="true">◉</div><h3>Proteção em primeiro lugar</h3><p>Veja o que considerar ao escolher capacete, luvas, jaqueta e outros equipamentos para pilotar.</p><a href="equipamentos-para-motociclistas.html">LER GUIA COMPLETO ↗</a></article>
 </div></section>
-<section class="section" id="artigos-novos"><div class="section-head"><div><span class="eyebrow">LEITURAS RECENTES</span><h2>Mais conhecimento <em>sobre duas rodas</em></h2></div><p>Guias práticos para tomar decisões melhores e cuidar da sua moto.</p></div><div class="cards">
-<article class="feature light"><div class="card-icon">04 / PRIMEIRA MOTO</div><div class="line-art">↗</div><h3>Como escolher sua primeira moto</h3><p>Compare custos, conforto, manutenção e documentação antes de decidir.</p><a href="como-escolher-primeira-moto.html">LER ARTIGO COMPLETO ↗</a></article>
-<article class="feature dark"><div class="card-icon">05 / ECONOMIA</div><div class="line-art">↗</div><h3>Como economizar combustível</h3><p>Veja hábitos de pilotagem e cuidados de manutenção que podem ajudar no consumo.</p><a href="economizar-combustivel-moto.html">LER ARTIGO COMPLETO ↗</a></article>
-<article class="feature red"><div class="card-icon">06 / CORRENTE</div><div class="line-art">⚙</div><h3>Cuidados com a corrente</h3><p>Saiba quando verificar, limpar e lubrificar o conjunto de transmissão.</p><a href="manutencao-corrente-moto.html">LER ARTIGO COMPLETO ↗</a></article>
-<article class="feature light"><div class="card-icon">07 / COMPRA SEGURA</div><div class="line-art">✓</div><h3>Vai comprar uma moto usada?</h3><p>Use um checklist de documentação, pneus, freios e avaliação mecânica.</p><a href="o-que-verificar-moto-usada.html">LER ARTIGO COMPLETO ↗</a></article>
-<article class="feature dark"><div class="card-icon">08 / CHUVA</div><div class="line-art">↗</div><h3>Pilotagem na chuva</h3><p>Veja como adaptar velocidade, distância e movimentos em pista molhada.</p><a href="pilotagem-na-chuva.html">LER ARTIGO COMPLETO ↗</a></article>
+<section class="section" id="artigos-novos"><div class="section-head"><div><span class="eyebrow">NA PRÁTICA</span><h2>Guias para o seu <em>dia a dia.</em></h2></div><p>Respostas diretas para dúvidas comuns de quem compra, mantém e pilota uma motocicleta.</p></div><div class="cards">
+<article class="feature light"><div class="card-icon">04 / PRIMEIRA MOTO</div><div class="line-art" aria-hidden="true">↗</div><h3>Como escolher sua primeira moto</h3><p>Compare custos, conforto, manutenção e documentação antes de decidir.</p><a href="como-escolher-primeira-moto.html">LER ARTIGO ↗</a></article>
+<article class="feature dark"><div class="card-icon">05 / ECONOMIA</div><div class="line-art" aria-hidden="true">↗</div><h3>Como economizar combustível</h3><p>Hábitos de pilotagem e manutenção que podem ajudar no consumo.</p><a href="economizar-combustivel-moto.html">LER ARTIGO ↗</a></article>
+<article class="feature red"><div class="card-icon">06 / CORRENTE</div><div class="line-art" aria-hidden="true">⚙</div><h3>Cuidados com a corrente</h3><p>Quando verificar, limpar e lubrificar o conjunto de transmissão.</p><a href="manutencao-corrente-moto.html">LER ARTIGO ↗</a></article>
+<article class="feature light"><div class="card-icon">07 / COMPRA SEGURA</div><div class="line-art" aria-hidden="true">✓</div><h3>Vai comprar uma moto usada?</h3><p>Checklist de documentação, pneus, freios e avaliação mecânica.</p><a href="o-que-verificar-moto-usada.html">LER ARTIGO ↗</a></article>
+<article class="feature dark"><div class="card-icon">08 / CHUVA</div><div class="line-art" aria-hidden="true">↗</div><h3>Pilotagem na chuva</h3><p>Como adaptar velocidade, distância e movimentos em pista molhada.</p><a href="pilotagem-na-chuva.html">LER ARTIGO ↗</a></article>
 </div></section>
-<section class="section" id="videotutoriais"><div class="section-head"><div><span class="eyebrow">APRENDA NA PRÁTICA</span><h2>Vídeos <em>tutoriais</em></h2></div><p>Assista às dicas e depois leia o guia completo.</p></div><div class="cards">
-<article class="feature light"><div class="card-icon">VÍDEO 01 / MANUTENÇÃO</div><h3>Como limpar a corrente da moto</h3><p>Veja o tutorial e confira os cuidados recomendados para a transmissão.</p><a href="manutencao-corrente-moto.html">ASSISTIR E LER ARTIGO ↗</a></article>
-<article class="feature dark"><div class="card-icon">VÍDEO 02 / COMPRA</div><h3>Dicas para comprar uma moto usada</h3><p>Aprenda o que observar antes de fechar negócio.</p><a href="o-que-verificar-moto-usada.html">ASSISTIR E LER ARTIGO ↗</a></article>
-<article class="feature red"><div class="card-icon">VÍDEO 03 / SEGURANÇA</div><h3>Dicas para pilotar na chuva</h3><p>Adapte sua pilotagem e redobre a atenção em pista molhada.</p><a href="pilotagem-na-chuva.html">ASSISTIR E LER ARTIGO ↗</a></article>
+<section class="section" id="videotutoriais"><div class="section-head"><div><span class="eyebrow">VEJA E APRENDA</span><h2>Aprenda também <em>em vídeo.</em></h2></div><p>Tutoriais externos complementam os guias escritos com demonstrações práticas.</p></div><div class="cards">
+<article class="feature light"><div class="card-icon">VÍDEO 01 / MANUTENÇÃO</div><h3>Como limpar a corrente da moto</h3><p>Veja orientações para a limpeza e os cuidados com a transmissão.</p><a href="manutencao-corrente-moto.html">VER VÍDEO E GUIA ↗</a></article>
+<article class="feature dark"><div class="card-icon">VÍDEO 02 / COMPRA</div><h3>O que observar numa moto usada</h3><p>Saiba quais pontos conferir antes de fechar negócio.</p><a href="o-que-verificar-moto-usada.html">VER VÍDEO E GUIA ↗</a></article>
+<article class="feature red"><div class="card-icon">VÍDEO 03 / SEGURANÇA</div><h3>Como pilotar na chuva</h3><p>Adapte sua condução e aumente a margem de segurança no piso molhado.</p><a href="pilotagem-na-chuva.html">VER VÍDEO E GUIA ↗</a></article>
 </div></section>
-<section class="ad-area"><span class="ad-label">PUBLICIDADE</span><p>Espaço reservado para anúncios</p><small>Os anúncios só serão ativados depois de configurar a conta e os códigos necessários, conforme as políticas do Google.</small></section>
-<section class="section guides" id="seguranca"><div class="section-head"><div><span class="eyebrow">ANTES DE ACELERAR</span><h2>Segurança em <em>primeiro lugar</em></h2></div></div><div class="guide-list" id="checklist"><div class="guide-number">01</div><div><h3>Checklist rápido antes de sair</h3><p>Confira pneus, freios, luzes, retrovisores, corrente e nível de combustível. Consulte o manual da sua moto.</p></div><span>↗</span><div class="guide-number">02</div><div id="equipamentos"><h3>Use equipamentos adequados</h3><p>Escolha capacete certificado e bem ajustado, calçado fechado, luvas e roupas resistentes. Equipamentos reduzem riscos, mas não eliminam acidentes.</p></div><span>↗</span><div class="guide-number">03</div><div><h3>Pilote de forma defensiva</h3><p>Mantenha distância, adapte a velocidade às condições e aumente a atenção em chuva, cruzamentos e pontos cegos.</p></div><span>↗</span></div></section>
+<section class="ad-area" aria-label="Espaço publicitário"><span class="ad-label">PUBLICIDADE</span><p>Espaço reservado para anúncios</p><small>Anúncios serão exibidos somente após a configuração e aprovação dos serviços aplicáveis.</small></section>
+<section class="section guides" id="seguranca"><div class="section-head"><div><span class="eyebrow">ANTES DE ACELERAR</span><h2>Segurança em <em>primeiro lugar.</em></h2></div><p>Uma pequena conferência antes de sair pode ajudar você a perceber problemas e planejar melhor o trajeto.</p></div><div class="guide-list" id="checklist"><div class="guide-number">01</div><div><h3>Faça uma checagem rápida</h3><p>Confira pneus, freios, luzes, retrovisores, corrente e combustível. Consulte o manual da sua moto.</p></div><span aria-hidden="true">↗</span><div class="guide-number">02</div><div id="equipamentos"><h3>Use equipamentos adequados</h3><p>Escolha capacete certificado e bem ajustado, calçado fechado, luvas e roupas resistentes. Equipamentos ajudam a reduzir riscos, mas não eliminam acidentes.</p></div><span aria-hidden="true">↗</span><div class="guide-number">03</div><div><h3>Pilote de forma defensiva</h3><p>Mantenha distância, ajuste a velocidade às condições e redobre a atenção em chuva, cruzamentos e pontos cegos.</p></div><span aria-hidden="true">↗</span></div></section>
 <section class="closing"><span class="eyebrow">A ESTRADA ENSINA. A INFORMAÇÃO PREPARA.</span><h2>Boa viagem.<br><em>Pilote com consciência.</em></h2><a class="btn" href="sobre.html">CONHEÇA O PROJETO ↗</a></section>
 </main>
 <footer><a class="brand" href="index.html"><span class="mark">GP</span><span>GUIA DO <b>PILOTO</b><small>SUA VIDA SOBRE DUAS RODAS</small></span></a><p>Conteúdo informativo para quem ama motocicletas.</p><div class="footlinks"><a href="sobre.html">Sobre</a><a href="politica-de-privacidade.html">Privacidade</a><a href="contato.html">Contato</a></div><small>© 2026 Guia do Piloto. Pilote com responsabilidade.</small></footer>
-<script src="script.js"></script></body></html>
+<script src="script.js"></script>
+</body>
+</html>
