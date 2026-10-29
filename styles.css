@@ -4,3 +4,34 @@
 
 /* Video tutorials embedded in articles */
 .video-tutorial{margin:34px 0;padding:26px;background:#fff;border-left:4px solid var(--red)}.video-tutorial h2{font-size:clamp(28px,4vw,38px);margin:12px 0}.video-tutorial>p{font-size:13px;line-height:1.75;color:#555}.video-frame{position:relative;width:100%;aspect-ratio:16/9;background:#111;overflow:hidden;border-radius:8px;margin:18px 0}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video-tutorial .video-note{font-size:11px;color:#777}
+
+
+/* Polimento visual, acessibilidade e leitura */
+:root{color-scheme:light}
+::selection{background:var(--red);color:#fff}
+:focus-visible{outline:3px solid var(--red);outline-offset:4px}
+.top{position:sticky;top:0;z-index:20;box-shadow:0 4px 22px #0000000a}
+nav a{padding:10px 0;position:relative}
+nav a:after{content:"";position:absolute;left:0;bottom:3px;width:0;height:2px;background:var(--red);transition:width .2s ease}
+nav a:hover:after,nav a:focus-visible:after{width:100%}
+.btn,.feature, .video-tutorial{transition:transform .22s ease,box-shadow .22s ease}
+.btn{border-radius:3px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px #00000022}
+.feature{border:1px solid #00000008}
+.feature:hover{transform:translateY(-4px);box-shadow:0 16px 34px #11121412}
+.feature>a{border-bottom:1px solid currentColor;padding-bottom:5px}
+.section{scroll-margin-top:100px}
+main.section{max-width:1180px;margin:0 auto}
+main.section>p,main.section>ul,main.section>ol{max-width:790px;font-size:15px;line-height:1.9;color:#484848}
+main.section>h2{max-width:790px;font-size:clamp(27px,3vw,36px);margin-top:34px}
+main.section li{margin:9px 0;padding-left:4px}
+main.section a:not(.btn){text-decoration-thickness:1px;text-underline-offset:3px}
+main.section a:not(.btn):hover{color:var(--red)}
+main.section>h1{max-width:900px}
+.video-tutorial{border-radius:5px;box-shadow:0 8px 30px #1112140a}
+.video-tutorial:hover{box-shadow:0 12px 34px #11121412}
+.ad-area{background:#ffffff80;border-radius:4px}
+footer{border-top:1px solid #eceae5}
+footer .brand{width:max-content}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+@media(max-width:760px){.top{position:relative}.brand{font-size:20px}nav{row-gap:4px}main.section>p,main.section>ul,main.section>ol{font-size:14px}.video-tutorial{padding:18px}.section-head h2{line-height:1.05}}
