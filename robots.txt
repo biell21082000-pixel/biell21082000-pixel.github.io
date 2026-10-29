@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Host: biell21082000-pixel.github.io
 Sitemap: https://biell21082000-pixel.github.io/sitemap.xml
