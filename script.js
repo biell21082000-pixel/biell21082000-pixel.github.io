@@ -1,16 +1,39 @@
-document.querySelectorAll('a[href^="#"]').forEach(link=>{link.addEventListener('click',event=>{const target=document.querySelector(link.getAttribute('href'));if(target){event.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}})});
-const contentSearch=document.getElementById('content-search-input');
-if(contentSearch){
-  const searchableCards=[...document.querySelectorAll('.section .cards .feature')];
-  const status=document.getElementById('content-search-status');
-  contentSearch.addEventListener('input',()=>{
-    const query=contentSearch.value.trim().toLocaleLowerCase('pt-BR');
-    let visible=0;
-    searchableCards.forEach(card=>{
-      const matches=card.textContent.toLocaleLowerCase('pt-BR').includes(query);
-      card.hidden=!matches;
-      if(matches) visible++;
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', event => {
+    const selector = link.getAttribute('href');
+    if (!selector) return;
+
+    const target = document.querySelector(selector);
+    if (target) {
+      event.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', selector);
+    }
+  });
+});
+
+const contentSearch = document.getElementById('content-search-input');
+
+if (contentSearch) {
+  const searchableCards = [...document.querySelectorAll('.feature, .mini-card')];
+  const status = document.getElementById('content-search-status');
+
+  contentSearch.addEventListener('input', () => {
+    const query = contentSearch.value.trim().toLocaleLowerCase('pt-BR');
+    let visible = 0;
+
+    searchableCards.forEach(card => {
+      const text = (card.textContent || '').toLocaleLowerCase('pt-BR');
+      const matches = !query || text.includes(query);
+      card.hidden = !matches;
+
+      if (matches) visible++;
     });
-    if(status) status.textContent=query ? (visible ? visible+' conteúdo(s) encontrado(s).' : 'Nenhum conteúdo encontrado. Tente outra palavra.') : 'Pesquise por tema, dúvida ou palavra-chave.';
+
+    if (status) {
+      status.textContent = query
+        ? (visible ? `${visible} conteúdo(s) encontrado(s).` : 'Nenhum conteúdo encontrado. Tente outra palavra.')
+        : 'Pesquise por tema, dúvida ou palavra-chave.';
+    }
   });
 }
